@@ -80,28 +80,6 @@ member[0].checkProgress()
     .then(msg => console.log(msg))
     .catch(error => console.log(error));
 //   number3
-function Candidate(name, position, interviews) {
-    this.name = name;
-    this.position = position;
-    this.interviews = interviews;
-    this.scheduled = []
-    this.scheduleInterview = function (date) {
-        for (i = 0; i < interviews.length; i++) {
-            if (i.status == "pending") {
-                this.scheduled.push({ interview: i, date: `${date}` });
-            }
-        }
-
-    }
-    this.sendConfirmation = async function () {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(`Interview confirmed with ${this.name} `)
-            }, 1000)
-        });
-    };
-
-}
 
 function Candidate(name, position, interviews) {
     this.name = name;
