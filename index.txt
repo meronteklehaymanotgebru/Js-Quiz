@@ -1,0 +1,46 @@
+1. CustomerOrder
+Input
+Order ID, items (name, quantity, price), status.
+
+Process
+
+Create an order with items and status.
+Add up (price × quantity) for each item to get the total.
+Change status to "paid" after payment (wait 2 seconds).
+Output
+Total order amount, payment status message.
+
+2. TeamMember
+Input
+Name, role, tasks (title, completed).
+
+Process
+
+Create a team member with tasks.
+For a task title, check if it is finished or not.
+See if any tasks are still not done.
+Output
+Task completion message, progress update (pending or all done).
+
+3. Candidate
+Input
+Name, position, interviews (status, date).
+
+Process
+
+Make a candidate with interviews.
+Schedule a date for all interviews with status "pending".
+Send confirmation message after a short wait.
+Output
+List of scheduled interviews, confirmation message.
+
+4. Course
+Input
+Course title, instructor, students.
+
+Process
+
+Create a course with a list of students.
+(Intended) Update a student’s progress.
+Output
+(Planned) Updated progress for a student.
